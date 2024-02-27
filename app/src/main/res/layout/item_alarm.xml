@@ -1,0 +1,58 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/layoutItem"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/layoutBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_light">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Xóa"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textSize="20dp"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layoutForeground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="43dp"
+        android:background="@drawable/bg_item_alarm"
+        android:layout_gravity="start">
+
+    <TextView
+        android:id="@+id/textViewHour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="09:45 PM"
+        android:textColor="@color/text_hour_alarm"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewRepeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewHour"
+            android:text="Alarm"
+            android:textColor="@android:color/darker_gray" />
+
+    <ImageView
+        android:id="@+id/imageViewStatus"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:src="@drawable/clock_enable" />
+    </RelativeLayout>
+</FrameLayout>
